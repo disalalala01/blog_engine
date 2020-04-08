@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'Blog_engine',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        'HOST': 'blogdisa.herokuapp',
         'PORT': '5432'
 
     }
