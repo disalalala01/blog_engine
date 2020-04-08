@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'y0+n7q1+ppg&f1=c+7+i=65y)3a%90a*-4r9x=e0$oycfg*yai'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = []
 
 
@@ -76,16 +76,16 @@ WSGI_APPLICATION = 'blog_engine.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 # if you want test use this os.path.join(BASE_DIR, 'db.sqlite3'
-
+# 'ENGINE': 'django.db.backends.postgresql',
+# 'NAME': 'Blog_engine',
+# 'USER': 'postgres',
+# 'PASSWORD': 'postgres',
+# 'HOST': 'localhost',
+# 'PORT': '5432'
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Blog_engine',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '5432'
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
