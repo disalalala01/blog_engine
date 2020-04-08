@@ -25,7 +25,6 @@ SECRET_KEY = 'y0+n7q1+ppg&f1=c+7+i=65y)3a%90a*-4r9x=e0$oycfg*yai'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 ALLOWED_HOSTS = []
 
 
@@ -84,7 +83,7 @@ DATABASES = {
         'NAME': 'Blog_engine',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'blogdisa.herokuapp',
+        'HOST': 'localhost',
         'PORT': '5432'
 
     }
